@@ -80,17 +80,22 @@ var char = [
 var len = char.length;
 var pass = [];
 
-var product = document.getElementById('textgen');
+var product = document.getElementById('placeholder');
 
 
-function passGen(x) {
+document.getElementById('genButton').addEventListener("click",passGen);
+
+function passGen() {
+    var x=10;
     for (var i = 0; i<x; i++) {
         var rindex = Math.floor(Math.random()*len);
         pass.push(char[rindex]);
         console.log(pass);
     }
     var password = pass.join('');
-    return password;
+    product.textContent = password;
+    pass = [];
+    return;
 }
 
 function clickAction() {

@@ -1,3 +1,13 @@
-#textgen {
+#placeholder {
     color: grey;
+}
+
+#genButton {
+    background-color: rgb(187, 0, 0);
+    border-color: rgb(187, 0, 0);
+}
+
+#clipboard {
+    background-color: grey;
+    border-color: grey;
 }
